@@ -60,6 +60,11 @@ public class Executor {
         //after getting out of the schedule, set output params
         output.setRemainingCpuTime(mCpu.getRunTimeRemaining());
         output.setRemainingTasks(mScheduler.getTaskRemaining());
+        if(mCpu.getRunTimeRemaining()>0){
+            output.setMessage("Finished all tasks");
+        }else{
+            output.setMessage("Ran out of the CPU time "+mScheduler.getTaskRemaining()+" tasks remaining");
+        }
         output.writeToOutputFile();
     }
 }
