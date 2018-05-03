@@ -1,0 +1,31 @@
+{
+  "num_of_tasks": 5,
+  "time_to_run": 20,
+  "tasks":[
+    {
+      "id":1,
+      "start_time":2,
+      "cpu_time":4
+    },
+    {
+      "id":2,
+      "start_time":3,
+      "cpu_time":5
+    },
+    {
+      "id":3,
+      "start_time":5,
+      "cpu_time":1
+    },
+    {
+      "id":4,
+      "start_time":3,
+      "cpu_time":3
+    },
+    {
+      "id":5,
+      "start_time":2,
+      "cpu_time":4
+    }
+  ]
+}
