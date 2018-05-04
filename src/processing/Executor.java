@@ -9,7 +9,7 @@ import java.io.PrintStream;
 
 public class Executor {
 
-    private static final long UNIT_OF_TIME = 1000;
+    private static final long UNIT_OF_TIME = 10;
     private CPU mCpu;
     private Scheduler mScheduler;
 
@@ -35,7 +35,9 @@ public class Executor {
             if (task != null)
                 mCpu.execute();
             //mock one second (unit of time), before the next execution
-            mCpu.decrementRemainingTime();
+            if(mCpu.decrementRemainingTime()){
+                break;
+            }
             try {
                 Thread.sleep(UNIT_OF_TIME);
             } catch (InterruptedException e) {
@@ -60,6 +62,7 @@ public class Executor {
             }
         }
         //after getting out of the schedule, set output params
+        System.out.println("<< END >>");
         output.setRemainingCpuTime(mCpu.getRunTimeRemaining());
         output.setRemainingTasks(mScheduler.getTaskRemaining());
         if(mCpu.getRunTimeRemaining()>0){

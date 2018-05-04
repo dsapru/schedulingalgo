@@ -45,7 +45,7 @@ public class Scheduler {
         mRedBlackTree.put(makeTaskKey(task), task);
     }
 
-    public void decrementTaskRemaining(){
+    public void decrementTaskRemaining() {
         mTaskRemaining--;
     }
 
@@ -57,6 +57,8 @@ public class Scheduler {
      * @return current Task {@link Task}
      */
     public Task getCurrentTask() {
+        System.out.println();
+        System.out.print(" Timeline:"+timer+">> ");
         timer++;
         Task currentTask = null;
         if (!mRedBlackTree.isEmpty()) {
@@ -67,11 +69,13 @@ public class Scheduler {
                 forEach(task -> mRedBlackTree.put(makeTaskKey(task), task));
         mInput.getTasks().removeIf(task -> task.getStartTime() == timer);
         //find and remove the first entry(in order, left most leaf) // log n time
+        mRedBlackTree.forEach((key, value) ->
+                System.out.print(" Task " + value.getId() + " unfair value " + value.getAllocatedCpuTime()+" ||"));
         return currentTask;
     }
 
-    public boolean isComplete(){
-        return mTaskRemaining<=0;
+    public boolean isComplete() {
+        return mTaskRemaining <= 0;
     }
 
     public long getTaskRemaining() {

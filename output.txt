@@ -1,3 +1,60 @@
-CPU runtime is over
-[-1, 1, 2, 4, 3, 5, 1, 2, 4, 5, 1, 2, 6, 6, 4, 5, 6, 1, 2, 5, 7, 6, 2, 6, -1, -1, -1, -1, -1, -1, -1, -1, 8, 8, -1, -1, -1, -1, -1, -1, 9, 9, 9, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 10]
-{"mNumberOfTasks":10,"mTotalTime":50,"mRemainingTasks":1,"mRemainingCpuTime":-50,"mCompletionOrder":[3,4,1,5,7,2,6,8,9],"mMessage":"Ran out of the CPU time 1 tasks remaining","mTasksExecutionOrder":[-1,1,2,4,3,5,1,2,4,5,1,2,6,6,4,5,6,1,2,5,7,6,2,6,-1,-1,-1,-1,-1,-1,-1,-1,8,8,-1,-1,-1,-1,-1,-1,9,9,9,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,10]}
+
+ Timeline:1>>  Task 1 unfair value 0 || Task 5 unfair value 0 ||
+ Timeline:2>>  Task 2 unfair value 0 || Task 4 unfair value 0 || Task 5 unfair value 0 ||
+ Timeline:3>>  Task 4 unfair value 0 || Task 5 unfair value 0 || Task 1 unfair value 1 ||
+ Timeline:4>>  Task 3 unfair value 0 || Task 5 unfair value 0 || Task 1 unfair value 1 || Task 2 unfair value 1 ||
+ Timeline:5>>  Task 5 unfair value 0 || Task 1 unfair value 1 || Task 2 unfair value 1 || Task 4 unfair value 1 ||
+ Timeline:6>>  Task 1 unfair value 1 || Task 2 unfair value 1 || Task 4 unfair value 1 ||
+ Timeline:7>>  Task 2 unfair value 1 || Task 4 unfair value 1 || Task 5 unfair value 1 ||
+ Timeline:8>>  Task 4 unfair value 1 || Task 5 unfair value 1 || Task 1 unfair value 2 ||
+ Timeline:9>>  Task 5 unfair value 1 || Task 1 unfair value 2 || Task 2 unfair value 2 ||
+ Timeline:10>>  Task 1 unfair value 2 || Task 2 unfair value 2 || Task 4 unfair value 2 ||
+ Timeline:11>>  Task 2 unfair value 2 || Task 4 unfair value 2 || Task 5 unfair value 2 ||
+ Timeline:12>>  Task 6 unfair value 0 || Task 4 unfair value 2 || Task 5 unfair value 2 || Task 1 unfair value 3 ||
+ Timeline:13>>  Task 4 unfair value 2 || Task 5 unfair value 2 || Task 1 unfair value 3 || Task 2 unfair value 3 ||
+ Timeline:14>>  Task 4 unfair value 2 || Task 5 unfair value 2 || Task 1 unfair value 3 || Task 2 unfair value 3 ||
+ Timeline:15>>  Task 5 unfair value 2 || Task 6 unfair value 2 || Task 1 unfair value 3 || Task 2 unfair value 3 ||
+ Timeline:16>>  Task 6 unfair value 2 || Task 1 unfair value 3 || Task 2 unfair value 3 ||
+ Timeline:17>>  Task 1 unfair value 3 || Task 2 unfair value 3 || Task 5 unfair value 3 ||
+ Timeline:18>>  Task 2 unfair value 3 || Task 5 unfair value 3 || Task 6 unfair value 3 ||
+ Timeline:19>>  Task 5 unfair value 3 || Task 6 unfair value 3 ||
+ Timeline:20>>  Task 7 unfair value 0 || Task 6 unfair value 3 || Task 2 unfair value 4 ||
+ Timeline:21>>  Task 6 unfair value 3 || Task 2 unfair value 4 ||
+ Timeline:22>>  Task 2 unfair value 4 ||
+ Timeline:23>>  Task 6 unfair value 4 ||
+ Timeline:24>> 
+ Timeline:25>> 
+ Timeline:26>> 
+ Timeline:27>> 
+ Timeline:28>> 
+ Timeline:29>> 
+ Timeline:30>> 
+ Timeline:31>> 
+ Timeline:32>>  Task 8 unfair value 0 ||
+ Timeline:33>> 
+ Timeline:34>> 
+ Timeline:35>> 
+ Timeline:36>> 
+ Timeline:37>> 
+ Timeline:38>> 
+ Timeline:39>> 
+ Timeline:40>>  Task 9 unfair value 0 ||
+ Timeline:41>> 
+ Timeline:42>> 
+ Timeline:43>> 
+ Timeline:44>> 
+ Timeline:45>> 
+ Timeline:46>> 
+ Timeline:47>> 
+ Timeline:48>> 
+ Timeline:49>> 
+ Timeline:50>> 
+ Timeline:51>> << END >>
+{"mNumberOfTasks":10,
+    "mTotalTime":50,
+    "mRemainingTasks":1,
+    "mRemainingCpuTime":-1,
+    "mCompletionOrder":[3,4,1,5,7,2,6,8,9],
+    "mMessage":"Ran out of the CPU time 1 tasks remaining",
+    "mTasksExecutionOrder":[-1,1,2,4,3,5,1,2,4,5,1,2,6,6,4,5,6,1,2,5,7,6,2,6,-1,-1,-1,-1,-1,-1,-1,-1,8,8,-1,-1,-1,-1,-1,-1,9,9,9,-1,-1,-1,-1,-1,-1,-1]
+ }

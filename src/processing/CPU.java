@@ -26,11 +26,9 @@ public class CPU {
 
     public void execute(){
         if(!mActive){
-            System.out.println("CPU not active");
             return;
         }
         if(mRunTimeRemaining <= 0){
-            System.out.println("CPU runtime is over");
             abort();
             return;
         }
@@ -38,8 +36,9 @@ public class CPU {
         mCurrentTask.incrementAllocatedCpuTime();
     }
 
-    public void decrementRemainingTime(){
+    public boolean decrementRemainingTime(){
         mRunTimeRemaining--;
+        return mRunTimeRemaining < 0;
     }
 
     public long getRunTimeRemaining(){
@@ -48,7 +47,6 @@ public class CPU {
 
     public void abort(){
         mActive =false;
-        System.out.println(mTaskIdOrder);
     }
 
     public boolean isActive() {
