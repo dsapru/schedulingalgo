@@ -35,11 +35,13 @@ public class Executor {
             if (task != null)
                 mCpu.execute();
             //mock one second (unit of time), before the next execution
+            mCpu.decrementRemainingTime();
             try {
                 Thread.sleep(UNIT_OF_TIME);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
+
 
             //update the task, if its not complete yet
             if (task != null) {

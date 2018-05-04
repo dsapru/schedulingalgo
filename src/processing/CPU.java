@@ -34,9 +34,12 @@ public class CPU {
             abort();
             return;
         }
-        mRunTimeRemaining--;
         mCurrentTask.decrementCpuTimeRequired();
         mCurrentTask.incrementAllocatedCpuTime();
+    }
+
+    public void decrementRemainingTime(){
+        mRunTimeRemaining--;
     }
 
     public long getRunTimeRemaining(){

@@ -1,6 +1,6 @@
 {
-  "num_of_tasks": 5,
-  "time_to_run": 20,
+  "num_of_tasks": 10,
+  "time_to_run": 50,
   "tasks":[
     {
       "id":1,
@@ -26,6 +26,31 @@
       "id":5,
       "start_time":2,
       "cpu_time":4
+    },
+    {
+      "id":6,
+      "start_time":13,
+      "cpu_time":5
+    },
+    {
+      "id":7,
+      "start_time":21,
+      "cpu_time":1
+    },
+    {
+      "id":8,
+      "start_time":33,
+      "cpu_time":2
+    },
+    {
+      "id":9,
+      "start_time":41,
+      "cpu_time":3
+    },
+    {
+      "id":10,
+      "start_time":100,
+      "cpu_time":5
     }
   ]
 }
