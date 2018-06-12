@@ -7,7 +7,7 @@ Step 1: Open the Project in IntelliJ IDEA IDE.
 Step 2: Manipulate the input.json, if required.
 Step 3: Compile & execute Main.java
 Step 4: Check the output on the output.json
-Step 5: To showcase the json output, use the online json editor
+Step 5: To showcase the json output, use the online json editor.
 
 Running the Python file for the graphical output
 Step 1: Open the Python 2.7 command line.
